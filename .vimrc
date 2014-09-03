@@ -52,3 +52,9 @@ set softtabstop=2 " pressing tab should add 2 spaces
 set shiftwidth=2  " indent/outdent size: 2 spaces
 set shiftround    " round indent/outdent to nearest tabstop
 set expandtab     " use spaces instead of tabs
+
+" Init pathogen
+call pathogen#infect()
+
+" Enable indent guides plugin by default (leader-ig to toggle)
+let g:indent_guides_enable_on_vim_startup = 1
