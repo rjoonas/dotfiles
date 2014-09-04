@@ -58,3 +58,5 @@ call pathogen#infect()
 
 " Enable indent guides plugin by default (leader-ig to toggle)
 let g:indent_guides_enable_on_vim_startup = 1
+
+colorscheme default
