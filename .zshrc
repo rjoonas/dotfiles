@@ -69,6 +69,4 @@ export EDITOR='vim'
 # Customize PATH
 path+=~/bin
 path+=~/.cabal/bin
-
-# Remove nonexistent folders from PATH
-path=($^path(N))
+export PATH=/usr/local/bin:$PATH # /usr/local/bin should be first to please homebrew.
