@@ -25,8 +25,6 @@ set laststatus=2  " always include status line in last window
 
 set visualbell " Flash the screen instead of sounding terminal bell
 
-set nowrap " No word wrap
-
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
