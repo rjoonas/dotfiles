@@ -69,4 +69,4 @@ export EDITOR='vim'
 # Customize PATH
 path+=~/bin
 path+=~/.cabal/bin
-export PATH=/usr/local/bin:$PATH # /usr/local/bin should be first to please homebrew.
+export PATH=/usr/local/sbin:/usr/local/bin:$PATH # Homebrew before others
