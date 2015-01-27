@@ -37,10 +37,15 @@ if has('mouse')
   set mouse=a
 endif
 
+" Init pathogen
+call pathogen#infect()
+call pathogen#helptags()
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
+  filetype plugin indent on
   set hlsearch
 endif
 
@@ -51,10 +56,13 @@ set shiftwidth=2  " indent/outdent size: 2 spaces
 set shiftround    " round indent/outdent to nearest tabstop
 set expandtab     " use spaces instead of tabs
 
-" Init pathogen
-call pathogen#infect()
-
 " Enable indent guides plugin by default (leader-ig to toggle)
 let g:indent_guides_enable_on_vim_startup = 1
+
+" Disable fancy unicode tricks in haskell plugin
+let g:haskell_conceal = 0
+
+" Disable folding
+set nofoldenable 
 
 colorscheme default
