@@ -66,3 +66,6 @@ let g:haskell_conceal = 0
 set nofoldenable 
 
 colorscheme default
+
+" Clear search pattern with :C
+:command C let @/=""
