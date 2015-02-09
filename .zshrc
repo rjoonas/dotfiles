@@ -66,6 +66,8 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias v='vim -p'
+
 # Customize PATH
 path+=~/bin
 path+=~/.cabal/bin
