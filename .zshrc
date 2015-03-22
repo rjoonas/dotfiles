@@ -67,6 +67,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias v='vim -p'
+alias undss='find . -name "*.DS_Store" -type f -delete'
 
 # Customize PATH
 path+=~/bin
