@@ -68,6 +68,7 @@ export EDITOR='vim'
 
 alias v='vim -p'
 alias undss='find . -name "*.DS_Store" -type f -delete'
+alias serve='open http://localhost:8001 && python -m SimpleHTTPServer 8001'
 
 # Customize PATH
 path+=~/bin
