@@ -73,4 +73,4 @@ alias serve='open http://localhost:8001 && python -m SimpleHTTPServer 8001'
 # Customize PATH
 path+=~/bin
 path+=~/.cabal/bin
-export PATH=/usr/local/sbin:/usr/local/bin:$PATH # Homebrew before others
+export PATH=/usr/local/sbin:/usr/local/bin:~/Library/Haskell/bin:$PATH # Homebrew before others
