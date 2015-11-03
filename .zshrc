@@ -70,7 +70,12 @@ alias v='vim -p'
 alias undss='find . -name "*.DS_Store" -type f -delete'
 alias serve='open http://localhost:8001 && python -m SimpleHTTPServer 8001'
 
+genpw () { head /dev/urandom | base64 | cut -c 1-$1 }
+
 # Customize PATH
 path+=~/bin
 path+=~/.cabal/bin
 export PATH=/usr/local/sbin:/usr/local/bin:~/Library/Haskell/bin:$PATH # Homebrew before others
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
