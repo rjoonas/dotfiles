@@ -77,5 +77,12 @@ path+=~/bin
 path+=~/.cabal/bin
 export PATH=/usr/local/sbin:/usr/local/bin:~/Library/Haskell/bin:$PATH # Homebrew before others
 
+if test -f ~/.gnupg/.gpg-agent-info -a -n "$(pgrep gpg-agent)"; then
+  source ~/.gnupg/.gpg-agent-info
+  export GPG_AGENT_INFO
+else
+  eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+fi
+
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
