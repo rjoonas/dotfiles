@@ -1,6 +1,7 @@
 [user]
   name = Joonas Rouhiainen
   email = joonas.rouhiainen@reaktor.com
+  signingkey = 7EA9045B
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
@@ -11,6 +12,8 @@
   default = simple
 [credential]
   helper = osxkeychain
+[commit]
+  gpgsign = true
 [alias]
   commend = commit --amend --no-edit --reset-author
   please = push --force-with-lease
