@@ -30,3 +30,5 @@
   show = diff-highlight | less
 [interactive]
   diffFilter = diff-highlight
+[submodule]
+  fetchJobs = 4
