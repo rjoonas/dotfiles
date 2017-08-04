@@ -37,10 +37,6 @@ if has('mouse')
   set mouse=a
 endif
 
-" Init pathogen
-call pathogen#infect()
-call pathogen#helptags()
-
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
@@ -69,3 +65,6 @@ colorscheme default
 
 " Clear search pattern with :C
 :command C let @/=""
+
+" Limit git commit message length
+au FileType gitcommit set tw=72
