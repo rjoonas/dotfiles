@@ -69,7 +69,7 @@ export EDITOR='vim'
 alias v='vim -p'
 alias undss='find . -name "*.DS_Store" -type f -delete'
 alias serve='open http://localhost:8001 && python -m SimpleHTTPServer 8001'
-alias prune='git branch -d $(git branch --merged)'
+alias prune='git branch --merged master | grep -v master | xargs -n 1 git branch -d'
 
 genpw () { head /dev/urandom | base64 | cut -c 1-$1 }
 
@@ -87,3 +87,5 @@ fi
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+export PATH="$HOME/.yarn/bin:$PATH"
