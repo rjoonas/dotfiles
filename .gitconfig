@@ -15,6 +15,7 @@
 [commit]
   gpgsign = true
 [alias]
+  psuh = push
   commend = commit --amend --no-edit --reset-author
   please = push --force-with-lease
   st = status --short --branch
