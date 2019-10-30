@@ -70,6 +70,7 @@ alias v='vim -p'
 alias undss='find . -name "*.DS_Store" -type f -delete'
 alias serve='open http://localhost:8001 && python -m SimpleHTTPServer 8001'
 alias prune='git branch --merged master | grep -v master | xargs -n 1 git branch -d'
+alias gpp='git pull --prune'
 
 genpw () { head /dev/urandom | base64 | cut -c 1-$1 }
 
