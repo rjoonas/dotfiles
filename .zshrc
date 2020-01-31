@@ -1,22 +1,27 @@
 # oh-my-sh-config
 
 export ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="eastwood"
-COMPLETION_WAITING_DOTS="true"
+export ZSH_THEME="eastwood"
+export COMPLETION_WAITING_DOTS="true"
 
 # Disable dirty markings for untracked files when dealing with large repos
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# timestamps for `history` output
+# Timestamps for `history` output
 HIST_STAMPS="yyyy-mm-dd"
 
 # oh-my-zsh plugins
-plugins=(git)
+plugins=(
+  dotenv           # automatically source .env files
+  git              # git aliases
+  gpg-agent        # ensure gpg-agent is running
+  last-working-dir # new shells default to last working dir
+  safe-paste       # never auto-run pasted code
+)
 
 source $ZSH/oh-my-zsh.sh
 
 # Basic configuration
-
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export EDITOR='vim'
 
