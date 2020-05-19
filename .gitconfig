@@ -33,3 +33,6 @@
   diffFilter = diff-highlight
 [submodule]
   fetchJobs = 4
+[merge]
+  conflictstyle = diff3
+
