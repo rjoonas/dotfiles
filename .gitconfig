@@ -1,7 +1,7 @@
 [user]
   name = Joonas Rouhiainen
-  email = joonas.rouhiainen@reaktor.com
-  signingkey = 7EA9045B
+  email = joonas.rouhiainen@iki.fi
+  signingkey = 5B571BC569DB54776C7E20033D0D6AB496E3D9F5
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
