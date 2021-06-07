@@ -40,3 +40,6 @@ genpw () { head /dev/urandom | base64 | cut -c 1-$1 }
 GPG_TTY=$(tty)
 export GPG_TTY
 
+# fnm
+export PATH=~/.fnm:$PATH
+eval "`fnm env`"
