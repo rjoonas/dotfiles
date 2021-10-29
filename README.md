@@ -7,6 +7,7 @@ ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.gitignore-global ~/.gitignore-global
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+mkdir ~/.ssh
 ln -s ~/dotfiles/.ssh/config ~/.ssh/config
 mkdir -p ~/.vim/tmp
 ```

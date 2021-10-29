@@ -43,3 +43,7 @@ export GPG_TTY
 # fnm
 export PATH=~/.fnm:$PATH
 eval "`fnm env`"
+
+# zoxide
+eval "$(zoxide init zsh)"
+
