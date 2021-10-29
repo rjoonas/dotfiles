@@ -22,7 +22,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Basic configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export EDITOR='vim'
 
 # Aliases
