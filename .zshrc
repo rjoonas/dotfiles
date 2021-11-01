@@ -12,10 +12,8 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # oh-my-zsh plugins
 plugins=(
-  dotenv           # automatically source .env files
   git              # git aliases
   gpg-agent        # ensure gpg-agent is running
-  last-working-dir # new shells default to last working dir
   safe-paste       # never auto-run pasted code
 )
 
