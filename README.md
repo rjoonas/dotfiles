@@ -15,5 +15,5 @@ mkdir -p ~/.vim/tmp
 diff-highlight might need to be added to $PATH, eg.
 
 ``` bash
-ln -s /opt/homebrew/Cellar/git/2.35.0/share/git-core/contrib/diff-highlight/diff-highlight /opt/homebrew/bin/diff-highlight
+ln -s /opt/homebrew/Cellar/git/2.36.0/share/git-core/contrib/diff-highlight/diff-highlight /opt/homebrew/bin/diff-highlight
 ```
