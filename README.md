@@ -1,7 +1,6 @@
-Installation
-============
+# Installation
 
-``` bash
+```bash
 git clone git://github.com/rjoonas/dotfiles ~/dotfiles
 ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dotfiles/.gitignore_global ~/.gitignore_global
@@ -14,6 +13,12 @@ mkdir -p ~/.vim/tmp
 
 diff-highlight might need to be added to $PATH, eg.
 
-``` bash
-ln -s /opt/homebrew/Cellar/git/2.37.3/share/git-core/contrib/diff-highlight/diff-highlight /opt/homebrew/bin/diff-highlight
+```bash
+ln -s /opt/homebrew/Cellar/git/2.40.0/share/git-core/contrib/diff-highlight/diff-highlight /opt/homebrew/bin/diff-highlight
+```
+
+Same for basictex:
+
+```bash
+ln -s /usr/local/texlive/2022basic/bin/universal-darwin/* /opt/homebrew/bin/
 ```

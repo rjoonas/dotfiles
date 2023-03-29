@@ -20,7 +20,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Basic configuration
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/Users/rjoonas/Library/Python/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export EDITOR='vim'
 
 # Aliases
@@ -33,6 +33,12 @@ alias v="vim -p"
 
 # Usage: `genpw 32`
 genpw () { head /dev/urandom | base64 | cut -c 1-$1 }
+
+fixaudio () {
+  sudo rm /Library/Preferences/Audio/com.apple.audio.DeviceSettings.plist
+  sudo rm /Library/Preferences/Audio/com.apple.audio.SystemSettings.plist
+  sudo killall coreaudiod
+}
 
 # GPG
 GPG_TTY=$(tty)
