@@ -20,7 +20,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Basic configuration
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/Users/rjoonas/Library/Python/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/rjoonas/Library/Python/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
 export EDITOR='vim'
 
 # Aliases
