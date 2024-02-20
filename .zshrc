@@ -31,6 +31,7 @@ alias serve="open http://localhost:8001 && python -m SimpleHTTPServer 8001"
 alias undss="find . -name '*.DS_Store' -type f -delete"
 alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
 alias v="vim -p"
+alias curlh='curl -sS -D - -o /dev/null'
 
 # Usage: `genpw 32`
 genpw () { head /dev/urandom | base64 | cut -c 1-$1 }
