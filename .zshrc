@@ -20,7 +20,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Basic configuration
-export PATH="/Library/PostgreSQL/15/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/rjoonas/Library/Python/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/Library/PostgreSQL/15/bin:/opt/homebrew/bin:/opt/homebrew/sbin:~/Library/Python/3.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 export EDITOR='vim'
 
@@ -55,8 +55,14 @@ eval "$(zoxide init zsh)"
 
 
 # bun completions
-[ -s "/Users/rjoonas/.bun/_bun" ] && source "/Users/rjoonas/.bun/_bun"
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
