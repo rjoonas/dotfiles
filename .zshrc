@@ -27,7 +27,7 @@ export EDITOR='vim'
 # Aliases
 alias gpp="git pull --prune"
 alias prune="git branch --merged master | grep -v master | xargs -n 1 git branch -d"
-alias serve="open http://localhost:8001 && python -m SimpleHTTPServer 8001"
+alias serve="open http://localhost:8001 && python3 -m http.server 8001"
 alias undss="find . -name '*.DS_Store' -type f -delete"
 alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
 alias v="vim -p"

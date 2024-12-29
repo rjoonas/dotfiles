@@ -14,7 +14,7 @@ mkdir -p ~/.vim/tmp
 diff-highlight might need to be added to $PATH, eg.
 
 ```bash
-ln -s /opt/homebrew/Cellar/git/2.43.2/share/git-core/contrib/diff-highlight/diff-highlight /opt/homebrew/bin/diff-highlight
+ln -s /opt/homebrew/Cellar/git/2.47.1/share/git-core/contrib/diff-highlight/diff-highlight /opt/homebrew/bin/diff-highlight
 ```
 
 Same for basictex:
