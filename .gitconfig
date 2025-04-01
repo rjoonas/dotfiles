@@ -1,7 +1,7 @@
 [user]
   name = Joonas Lehtisyrjä
-  email = joonas.rouhiainen@iki.fi
-  signingkey = 5B571BC569DB54776C7E20033D0D6AB496E3D9F5
+  email = joonas.lehtisyrja@iki.fi
+  signingkey = B3AB00D98C09790DACE78C9C10C4CE241E39B1CE
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
